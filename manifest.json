@@ -1,0 +1,21 @@
+{
+  "name": "Nova Solutions Property Management",
+  "short_name": "Nova Solutions",
+  "description": "Premier property management, luxury landscaping, commercial lawn care, and EZ Dock solutions in Southwest Nova Scotia",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#667eea",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "property", "lifestyle"],
+  "lang": "en-CA",
+  "dir": "ltr"
+}
