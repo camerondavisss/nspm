@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frequently asked questions about Nova Solutions' property management, landscaping, lawn care, and dock services in Southwest Nova Scotia.">
+    <title>FAQ | Nova Solutions Property Management</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#667eea">
+    <style>
+        .faq-section {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .faq-category {
+            margin-bottom: 3rem;
+        }
+        .faq-category h2 {
+            font-size: 1.875rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 2px solid var(--primary-color);
+        }
+        .faq-item {
+            background: white;
+            border-radius: 0.75rem;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            transition: all 0.25s ease;
+        }
+        .faq-item:hover {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.25rem 1.5rem;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1.125rem;
+            color: var(--text-primary);
+            user-select: none;
+            transition: var(--transition-base);
+        }
+        .faq-question:hover {
+            color: var(--primary-color);
+        }
+        .faq-icon {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.25s ease;
+            flex-shrink: 0;
+            margin-left: 1rem;
+        }
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease;
+        }
+        .faq-answer-content {
+            padding: 0 1.5rem 1.5rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .faq-answer-content p {
+            margin-bottom: 1rem;
+        }
+        .faq-answer-content ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .faq-answer-content li {
+            list-style: disc;
+            margin-bottom: 0.5rem;
+        }
+        .still-have-questions {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 3rem;
+            border-radius: 1rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+        .still-have-questions h2 {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .still-have-questions p {
+            font-size: 1.125rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.95;
+        }
+    </style>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <span class="logo__icon">NS</span>
+                <span class="logo__text">Nova Solutions</span>
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="index.html#portfolio" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"><a href="index.html#rentals" class="nav__link">Rentals</a></li>
+                    <li class="nav__item"><a href="index.html#process" class="nav__link">Process</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </div>
+            </div>
+            <div class="nav__actions">
+                <a href="index.html#contact" class="btn btn--primary">Contact Us</a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="page-hero__background">
+            <div class="page-hero__overlay"></div>
+        </div>
+        <div class="container">
+            <div class="page-hero__content">
+                <h1 class="page-hero__title">Frequently Asked Questions</h1>
+                <p class="page-hero__description">Find answers to common questions about our services</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="faq-section">
+
+                <!-- Property Management FAQs -->
+                <div class="faq-category">
+                    <h2>Property Management</h2>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What does your property management service include?
+                            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                <p>Our comprehensive property management includes:</p>
+                                <ul>
+                                    <li>Tenant screening and placement</li>
+                                    <li>Rent collection and financial reporting</li>
+                                    <li>24/7 maintenance coordination</li>
+                                    <li>Quarterly property inspections</li>
+                                    <li>Legal compliance and documentation</li>
+                                    <li>Lease enforcement and renewals</li>
+                                    <li>Online owner portal access</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How do you screen potential tenants?
+                            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                <p>We employ a rigorous multi-step screening process:</p>
+                                <ul>
+                                    <li>Credit history check</li>
+                                    <li>Employment verification</li>
+                                    <li>Previous landlord references</li>
+                                    <li>Criminal background check</li>
+                                    <li>Income verification (typically 3x rent requirement)</li>
+                                    <li>Rental history review</li>
+                                </ul>
+                                <p>This thorough approach helps ensure reliable, responsible tenants for your property.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What are your management fees?
+                            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                <p>Our fee structure is transparent and competitive. Management fees vary based on property type, number of units, and services required. Contact us for a personalized quote that outlines all costs with no hidden fees. We typically charge a percentage of monthly rent plus any applicable leasing fees.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How do I access my property financial reports?
+                            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                <p>Property owners have 24/7 access to our online portal where you can view:</p>
+                                <ul>
+                                    <li>Monthly financial statements</li>
+                                    <li>Income and expense reports</li>
+                                    <li>Maintenance requests and history</li>
+                                    <li>Inspection reports with photos</li>
+                                    <li>Lease documents and renewals</li>
+                                </ul>
+                                <p>We also provide monthly email summaries and are always available for questions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lawn Care FAQs -->
+                <div class="faq-category">
+                    <h2>Commercial Lawn Care</h2>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How often will you service my property?
+                            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                <p>We offer flexible service schedules based on your needs:</p>
+                                <ul>
+                                    <li>Weekly service during growing season (most popular)</li>
+                                    <li>Bi-weekly maintenance programs</li>
+                                    <li>Custom schedules for specific requirements</li>
+                                </ul>
+                                <p>We assign the same crew to your property for consistency and familiarity with your site's specific needs.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What happens if you can't service on the scheduled day due to weather?
+                            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                <p>Weather is unpredictable, especially in Nova Scotia. If we can't complete your service on the scheduled day, we'll reschedule within the same week whenever possible. You'll be notified of any changes, and we'll ensure your property receives all contracted services.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Do you provide services year-round?
+                            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                <p>Yes! We offer seasonal services including:</p>
+                                <ul>
+                                    <li>Spring: Cleanup, fertilization, bed preparation</li>
+                                    <li>Summer: Regular mowing, edging, weed control</li>
+                                    <li>Fall: Leaf removal, aeration, winterization</li>
+                                    <li>Winter: Snow removal and ice management (upon request)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Landscaping FAQs -->
+                <div class="faq-category">
+                    <h2>Luxury Landscaping</h2>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How does the design process work?
+                            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                <p>Our design process includes:</p>
+                                <ul>
+                                    <li><strong>Initial Consultation:</strong> We visit your property to discuss your vision, needs, and budget</li>
+                                    <li><strong>Site Analysis:</strong> Assessment of soil, drainage, sun exposure, and existing conditions</li>
+                                    <li><strong>Design Development:</strong> Creation of detailed plans with material selections</li>
+                                    <li><strong>Presentation:</strong> Review of design with 3D renderings and cost estimate</li>
+                                    <li><strong>Refinement:</strong> Adjustments based on your feedback</li>
+                                    <li><strong>Installation:</strong> Professional execution of the approved plan</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How long does a typical landscape project take?
+                            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                <p>Project timelines vary based on scope and complexity:</p>
+                                <ul>
+                                    <li>Small projects (patio, garden bed): 1-3 days</li>
+                                    <li>Medium projects (large patio, retaining walls): 1-2 weeks</li>
+                                    <li>Large projects (complete landscape renovation): 2-6 weeks</li>
+                                </ul>
+                                <p>We provide detailed timelines during the proposal phase and keep you informed throughout the project.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Do you offer warranties on your work?
+                            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                <p>Yes! We stand behind our work with comprehensive warranties:</p>
+                                <ul>
+                                    <li>1-year warranty on plant materials</li>
+                                    <li>2-year warranty on hardscape installation</li>
+                                    <li>5-year warranty on retaining wall structures</li>
+                                </ul>
+                                <p>Warranty details are included in every project proposal.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EZ Dock FAQs -->
+                <div class="faq-category">
+                    <h2>EZ Dock Solutions</h2>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What makes EZ Dock different from traditional docks?
+                            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                <p>EZ Dock offers several advantages:</p>
+                                <ul>
+                                    <li><strong>Maintenance-Free:</strong> No painting, staining, or sealing required</li>
+                                    <li><strong>Durable:</strong> Polyethylene construction resists weather, UV, and marine growth</li>
+                                    <li><strong>Stable:</strong> Superior stability compared to floating docks</li>
+                                    <li><strong>Modular:</strong> Easy to expand or reconfigure</li>
+                                    <li><strong>Safe:</strong> Non-slip surface, no splinters or exposed hardware</li>
+                                    <li><strong>Eco-Friendly:</strong> No chemicals leaching into water</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Do I need permits for dock installation?
+                            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                <p>Most dock installations in Nova Scotia require permits from:</p>
+                                <ul>
+                                    <li>Nova Scotia Department of Fisheries and Aquaculture</li>
+                                    <li>Transport Canada (for navigable waters)</li>
+                                    <li>Local municipal authorities</li>
+                                </ul>
+                                <p>We handle all permitting requirements as part of our service, ensuring compliance with all regulations.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            When should I have my dock removed for winter?
+                            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                <p>We typically recommend dock removal in late October or early November, before ice formation. The exact timing depends on:</p>
+                                <ul>
+                                    <li>Your specific location</li>
+                                    <li>Historical freeze dates for your area</li>
+                                    <li>Current weather forecasts</li>
+                                    <li>Ice movement patterns in your waterway</li>
+                                </ul>
+                                <p>We'll contact you in advance to schedule removal at the optimal time. Spring reinstallation typically occurs in April or May.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- General FAQs -->
+                <div class="faq-category">
+                    <h2>General Questions</h2>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What areas do you serve?
+                            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                <p>We proudly serve all of Southwest Nova Scotia, including:</p>
+                                <ul>
+                                    <li>Yarmouth and surrounding areas</li>
+                                    <li>Shelburne County</li>
+                                    <li>Digby County</li>
+                                    <li>Queens County</li>
+                                </ul>
+                                <p>For properties outside these areas, please contact us to discuss service availability.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Are you licensed and insured?
+                            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                <p>Yes! Nova Solutions maintains:</p>
+                                <ul>
+                                    <li>Full commercial liability insurance</li>
+                                    <li>WCB coverage for all employees</li>
+                                    <li>Proper licensing for all services</li>
+                                    <li>Bonding where required</li>
+                                </ul>
+                                <p>We can provide proof of insurance and licensing upon request.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How do I get started?
+                            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                <p>Getting started is easy:</p>
+                                <ul>
+                                    <li><strong>Contact Us:</strong> Call (902) 749-8000 or fill out our online form</li>
+                                    <li><strong>Consultation:</strong> We'll schedule a free consultation to discuss your needs</li>
+                                    <li><strong>Proposal:</strong> Receive a detailed, transparent proposal</li>
+                                    <li><strong>Agreement:</strong> Review and sign service agreement</li>
+                                    <li><strong>Service Begins:</strong> We start delivering exceptional results</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="still-have-questions">
+                    <h2>Still Have Questions?</h2>
+                    <p>We're here to help! Contact our team for personalized answers to your specific questions.</p>
+                    <a href="index.html#contact" class="btn btn--secondary btn--large">Contact Us Today</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__column">
+                    <a href="index.html" class="footer__logo">
+                        <span class="logo__icon">NS</span>
+                        <span class="logo__text">Nova Solutions</span>
+                    </a>
+                    <p class="footer__description">Southwest Nova Scotia's premier provider of property management, luxury landscaping, commercial lawn care, and waterfront solutions.</p>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title">Services</h3>
+                    <ul class="footer__links">
+                        <li><a href="property-management.html">Property Management</a></li>
+                        <li><a href="lawn-care.html">Commercial Lawn Care</a></li>
+                        <li><a href="landscaping.html">Luxury Landscaping</a></li>
+                        <li><a href="ez-dock.html">EZ Dock Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title">Company</h3>
+                    <ul class="footer__links">
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#portfolio">Portfolio</a></li>
+                        <li><a href="index.html#rentals">Rentals</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title">Contact</h3>
+                    <ul class="footer__links">
+                        <li><a href="tel:+19027498000">(902) 749-8000</a></li>
+                        <li><a href="mailto:info@novasolutionspm.ca">info@novasolutionspm.ca</a></li>
+                        <li>Southwest Nova Scotia</li>
+                        <li><a href="index.html#contact">Request Proposal</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Nova Solutions Property Management. All rights reserved.</p>
+                <div class="footer__legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // FAQ Accordion functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                const answer = item.querySelector('.faq-answer');
+                const isActive = item.classList.contains('active');
+
+                // Close all other items
+                document.querySelectorAll('.faq-item').forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                        otherItem.querySelector('.faq-answer').style.maxHeight = null;
+                    }
+                });
+
+                // Toggle current item
+                if (isActive) {
+                    item.classList.remove('active');
+                    answer.style.maxHeight = null;
+                } else {
+                    item.classList.add('active');
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
